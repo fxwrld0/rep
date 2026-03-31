@@ -1,10 +1,22 @@
 ![Status](https://github.com/fxwrld0/rep/actions/workflows/main.yml/badge.svg)
-# Конвертер Валют (Микросервис)
+import unittest
 
-Простой сервис на Python для конвертации валют в JSON формате.
+# Упрощенная функция конвертации для теста
+def calculate(amount, curr):
+    rates = {"RUB": 92.5, "EUR": 0.92}
+    if curr in rates:
+        return amount * rates[curr]
+    return 0
 
-## Как запустить
-1. Убедитесь, что у вас установлен Python.
-2. Запустите сервер командой в терминале:
-   ```bash
-   python app.py
+class TestCurrency(unittest.TestCase):
+    def test_rub(self):
+        # 100 * 92.5 = 9250.0
+        self.assertEqual(calculate(100, "RUB"), 9250.0)
+
+    def test_eur(self):
+        # 10 * 0.92 = 9.2
+        self.assertEqual(calculate(10, "EUR"), 9.2)
+
+if __name__ == "__main__":
+    unittest.main()
+   
