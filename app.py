@@ -25,4 +25,4 @@ class CurrencyHandler(BaseHTTPRequestHandler):
 
 if __name__ == "__main__":
     print("Server started at http://localhost:8000")
-    HTTPServer(('localhost', 8000), CurrencyHandler).serve_forever()
+    HTTPServer(('localhost', 8000), CurrencyHandler).serve_forever() 
