@@ -1,4 +1,3 @@
-![Tests](https://github.com/fxwrld0/rep/actions/workflows/main.yml/badge.svg)
 import unittest
 
 def calculate(amount, curr):
