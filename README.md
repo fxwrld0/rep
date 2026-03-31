@@ -1,11 +1,9 @@
-# Currency Microservice 
-![Python Tests](https://github.com/fxwrld0/rep/actions/workflows/main.yml/badge.svg)
+# Currency Service
+![Tests](https://github.com/fxwrld0/rep/actions/workflows/main.yml/badge.svg)
 
-Простой микросервис на Python для конвертации валют (RUB, EUR). 
-Проект настроен с автоматическим CI-пайплайном для проверки кода.
+## Описание
+Микросервис для конвертации валют. 
+Настроен CI-пайплайн для автоматического тестирования.
 
-## Инструкция по запуску
-1. Убедитесь, что установлен Python 3.
-2. Запустите сервер:
-   ```bash
-   python app.py
+## Запуск
+`python app.py`
